@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Zpravodajský web</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="logo">
+                <a href="index.html">zprávy dnes</a>
+            </div>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="nav-toggler">
+                <span></span>
+            </label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Domů</a></li>
+                    <li><a href="domaci.html">Domácí</a></li>
+                    <li><a href="zahranicni.html">Zahraniční</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="covid.html">Covid-19</a></li>
+                    <li><a href="kontakt.html">Kontakty</a></li>
+                    <li><input type="text" placeholder="hledání"></li>
+                    <li><button type="button" onclick="alert('Bez skriptu to nepůjde :(!')">vyhledat</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="box">
+        <article class="Titulek">
+            <img alt="Clanek" src="images/clanek.png" width="200" height="200">
+            <header>
+                <h2>Lorem ipsum dolor sit amet</h2>
+            </header>
+            <p>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Integer tempor. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nam quis nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ac dolor sit amet purus malesuada congue. Nulla non lectus sed nisl molestie malesuada. Aenean fermentum risus id tortor. Aliquam id dolor. Integer imperdiet lectus quis justo. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.
+            </p>
+        </article>
+        <div class="Diskuze">
+            <h2 class="Diskuze_nadpis">Diskuzní fórum</h2>
+            <div class="Diskuze_pole">
+                <h3 class="Diskuze_nadpis">Přispět v diskuzi</h3>
+                <form>
+                    <label>Uživatelské jméno:</label><br>
+                    <textarea name="jmeno_uzivatele" required="" class="jmeno_uzivatele_pole" placeholder="Začněte psát"></textarea><br>
+                    <label>Text:</label><br>
+                    <textarea name="vlozeny_text" required="" class="vlozeny_text_pole" placeholder="Začněte psát"></textarea>
+                    <div class="pridat_button">
+                        <button type="button" onclick="alert('Bez skriptu to nepůjde :(!')">Přidat</button>
+                    </div>
+                </form>
+            </div>
+            <div class="Koment-box">
+                <div class="Koment-text">
+                    <article>
+                        <h3>Pepa88, 29-12-2019 23:45</h3>
+                        <p>
+                            Když svítí slunce tak silně jako nyní, tak se stuha třpytí jako kapka rosy a jen málokdo vydrží dívat se na ni přímo déle než pár chvil. Jak vlastně vypadají ony balónky?
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Tomáš, 05-05-2020 15:55</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse sollicitudin et odio et sagittis.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Pepa Nový, 25-08-2020 20:20</h3>
+                        <p>
+                            Když svítí slunce tak silně jako nyní, tak se stuha třpytí jako kapka rosy a jen málokdo vydrží dívat se na ni přímo déle než pár chvil. Jak vlastně vypadají ony balónky?
+                        </p>
+                        <p>
+                            Když svítí slunce tak silně jako nyní, tak se stuha třpytí jako kapka rosy a jen málokdo vydrží dívat se na ni přímo déle než pár chvil. Jak vlastně vypadají ony balónky?
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="Reklama1">
+            <img alt="Reklama1" src="images/reklama1.jpg" width="400" height="600">
+        </div>
+        <div class="Reklama2">
+            <img alt="Reklama" src="images/reklama2.jpg" width="400" height="600">
+        </div>
+    </div>
+</main>
+<footer>
+    <h5>Studentský projekt</h5>
+    <h6>Vytvořil: Ondřej Titěra, Pavel Svátek, František Pusztai © 2021</h6>
+</footer>
+</body>
+</html>

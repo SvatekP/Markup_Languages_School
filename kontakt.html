@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Zpravodajský web</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="logo">
+                <a href="index.html">Zprávy Dnes</a>
+            </div>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="nav-toggler">
+                <span></span>
+            </label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Domů</a></li>
+                    <li><a href="domaci.html">Domácí</a></li>
+                    <li><a href="zahranicni.html">Zahraniční</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="covid.html">Covid-19</a></li>
+                    <li><a href="kontakt.html">Kontakty</a></li>
+                    <li>  <input type="text" placeholder="hledání"></li>
+                    <li> <button type="button" onclick="alert('Bez skriptu to nepůjde :(!')">vyhledat</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="Kontakt">
+        <p>Kontaktní osoba: Tomáš Petr</p>
+        <p>Tel: +420 123 456 789</p>
+        <p>Email: nic@neco.cz</p>
+    </section>
+    <section id="kontakt">
+        <p>
+            Kterýkoliv dotaz na náš portál nám zašlete pomocí formuláře níže.
+        </p>
+        <form action="cv2.html" method="post">
+            <label>Předmět dotazu<input type="text" name="predmet" placeholder="..."></label>
+            <label>váš email<input type="email" name="email" placeholder="@" required></label>
+            <textarea name="email" placeholder="Text vaší zprávy..." required></textarea>
+            <input type="submit" value="Odeslat">
+        </form>
+    </section>
+</main>
+<footer>
+    <h5>Studentský projekt</h5>
+    <h6>Vytvořil: Ondřej Titěra, Pavel Svátek, František Pusztai © 2021</h6>
+</footer>
+</body>
+</html>
